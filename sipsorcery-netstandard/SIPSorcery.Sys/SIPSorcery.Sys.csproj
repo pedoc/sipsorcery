@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+	<AssemblyName>SIPSorcery.Sys</AssemblyName>
+	<RootNamespace>SIPSorcery.Sys</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Sys\Crypto\Crypto.cs">
+      <Link>Crypto\Crypto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Sys\Net\ByteBufferInfo.cs">
+      <Link>Net\ByteBufferInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Sys\Net\IPSocket.cs">
+      <Link>Net\IPSocket.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Sys\SafeXML.cs">
+      <Link>SafeXML.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Sys\TypeExtensions.cs">
+      <Link>TypeExtensions.cs</Link>
+    </Compile>
+  </ItemGroup>
+  
+</Project>

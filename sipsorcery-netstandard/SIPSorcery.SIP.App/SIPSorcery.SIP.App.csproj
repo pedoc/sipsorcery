@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+	<AssemblyName>SIPSorcery.SIP.App</AssemblyName>
+	<RootNamespace>SIPSorcery.SIP.App</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\AssemblyState.cs">
+      <Link>AssemblyState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\Monitoring\SIPMonitorConsoleEvent.cs">
+      <Link>Monitoring\SIPMonitorConsoleEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\Monitoring\SIPMonitorEvent.cs">
+      <Link>Monitoring\SIPMonitorEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\Monitoring\SIPMonitorFilter.cs">
+      <Link>Monitoring\SIPMonitorFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\Monitoring\SIPMonitorMachineEvent.cs">
+      <Link>Monitoring\SIPMonitorMachineEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\Persistence\PersitenceDelegates.cs">
+      <Link>Persistence\PersitenceDelegates.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPAppFunctionDelegates.cs">
+      <Link>SIPAppFunctionDelegates.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPAssets\ISIPAsset.cs">
+      <Link>SIPAssets\ISIPAsset.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPAssets\SIPAccount.cs">
+      <Link>SIPAssets\SIPAccount.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPAssets\SIPProvider.cs">
+      <Link>SIPAssets\SIPProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPPacketMangler.cs">
+      <Link>SIPPacketMangler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPRequestAuthoriser\SIPRequestAuthenticationResult.cs">
+      <Link>SIPRequestAuthoriser\SIPRequestAuthenticationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPUserAgents\ISIPClientUserAgent.cs">
+      <Link>SIPUserAgents\ISIPClientUserAgent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPUserAgents\ISIPServerUserAgent.cs">
+      <Link>SIPUserAgents\ISIPServerUserAgent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPUserAgents\SIPCallDescriptor.cs">
+      <Link>SIPUserAgents\SIPCallDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPUserAgents\SIPClientUserAgent.cs">
+      <Link>SIPUserAgents\SIPClientUserAgent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPUserAgents\SIPNotifierClient.cs">
+      <Link>SIPUserAgents\SIPNotifierClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPUserAgents\SIPRegistrationUserAgent.cs">
+      <Link>SIPUserAgents\SIPRegistrationUserAgent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.App\SIPUserAgents\SIPServerUserAgent.cs">
+      <Link>SIPUserAgents\SIPServerUserAgent.cs</Link>
+    </Compile>
+
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\SIPSorcery.Net\SIPSorcery.Net.csproj" />
+    <ProjectReference Include="..\SIPSorcery.SIP\SIPSorcery.SIP.csproj" />
+    <ProjectReference Include="..\SIPSorcery.Sys\SIPSorcery.Sys.csproj" />
+  </ItemGroup>
+  
+</Project>

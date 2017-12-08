@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+	<AssemblyName>SIPSorcery.Net</AssemblyName>
+	<RootNamespace>SIPSorcery.Net</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\ICE\IceCandidate.cs">
+      <Link>ICE\IceCandidate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\ICE\IceConnectionStatesEnum.cs">
+      <Link>ICE\IceConnectionStatesEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\ICE\TurnServer.cs">
+      <Link>ICE\TurnServer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\SDP\SDP.cs">
+      <Link>SDP\SDP.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\SDP\SDPConnectionInformation.cs">
+      <Link>SDP\SDPConnectionInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\SDP\SDPMediaAnnouncement.cs">
+      <Link>SDP\SDPMediaAnnouncement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\SDP\SDPMediaFormat.cs">
+      <Link>SDP\SDPMediaFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\SDP\SDPMediaTypes.cs">
+      <Link>SDP\SDPMediaTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.Net\SDP\SessionDescriptionTypes.cs">
+      <Link>SDP\SessionDescriptionTypes.cs</Link>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\SIPSorcery.Sys\SIPSorcery.Sys.csproj">
+      <Project>{27E8B3BB-0C0F-473E-AFED-DCE76F73A65D}</Project>
+      <Name>SIPSorcery.Sys</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

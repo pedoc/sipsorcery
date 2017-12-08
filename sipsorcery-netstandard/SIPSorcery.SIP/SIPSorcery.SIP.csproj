@@ -1,0 +1,134 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+	<AssemblyName>SIPSorcery.SIP</AssemblyName>
+	<RootNamespace>SIPSorcery.SIP</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\AssemblyState.cs">
+      <Link>AssemblyState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\DNS\SIPDNSConstants.cs">
+      <Link>DNS\SIPDNSConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\DNS\SIPDNSLookupResult.cs">
+      <Link>DNS\SIPDNSLookupResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPAuthorisation\SIPAuthorisationDigest.cs">
+      <Link>SIPAuthorisation\SIPAuthorisationDigest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPAuthorisation\SIPRequestAuthorisationResult.cs">
+      <Link>SIPAuthorisation\SIPRequestAuthorisationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPCDR\SIPCDR.cs">
+      <Link>SIPCDR\SIPCDR.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPEvents\Dialog\SIPEventDialog.cs">
+      <Link>SIPEvents\Dialog\SIPEventDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPEvents\Dialog\SIPEventDialogInfo.cs">
+      <Link>SIPEvents\Dialog\SIPEventDialogInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPEvents\Dialog\SIPEventDialogParticipant.cs">
+      <Link>SIPEvents\Dialog\SIPEventDialogParticipant.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPEvents\Presence\SIPEventPresence.cs">
+      <Link>SIPEvents\Presence\SIPEventPresence.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPEvents\Presence\SIPEventPresenceTuple.cs">
+      <Link>SIPEvents\Presence\SIPEventPresenceTuple.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPEvents\SIPEvent.cs">
+      <Link>SIPEvents\SIPEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPEvents\SIPEventPackages.cs">
+      <Link>SIPEvents\SIPEventPackages.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPFunctionDelegates.cs">
+      <Link>SIPFunctionDelegates.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPTransactions\SIPCancelTransaction.cs">
+      <Link>SIPTransactions\SIPCancelTransaction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPTransactions\SIPNonInviteTransaction.cs">
+      <Link>SIPTransactions\SIPNonInviteTransaction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPTransactions\SIPTransaction.cs">
+      <Link>SIPTransactions\SIPTransaction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPTransactions\SIPTransactionEngine.cs">
+      <Link>SIPTransactions\SIPTransactionEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPTransactions\UACInviteTransaction.cs">
+      <Link>SIPTransactions\UACInviteTransaction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPTransactions\UASInviteTransaction.cs">
+      <Link>SIPTransactions\UASInviteTransaction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\Channels\SIPChannel.cs">
+      <Link>SIP\Channels\SIPChannel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\Channels\SIPConnection.cs">
+      <Link>SIP\Channels\SIPConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\Channels\SIPTCPChannel.cs" Link="SIP\Channels\SIPTCPChannel.cs" />
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\Channels\SIPUDPChannel.cs" Link="SIP\Channels\SIPUDPChannel.cs" />
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPConstants.cs">
+      <Link>SIP\SIPConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPDialogue.cs">
+      <Link>SIP\SIPDialogue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPEndPoint.cs">
+      <Link>SIP\SIPEndPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPHeader.cs">
+      <Link>SIP\SIPHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPMessage.cs">
+      <Link>SIP\SIPMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPParameterlessURI.cs">
+      <Link>SIP\SIPParameterlessURI.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPParameters.cs">
+      <Link>SIP\SIPParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPRequest.cs">
+      <Link>SIP\SIPRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPResponse.cs">
+      <Link>SIP\SIPResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPTransport.cs">
+      <Link>SIP\SIPTransport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPURI.cs">
+      <Link>SIP\SIPURI.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPUserAgentsRolesEnum.cs">
+      <Link>SIP\SIPUserAgentsRolesEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPUserField.cs">
+      <Link>SIP\SIPUserField.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIP\SIPValidationException.cs">
+      <Link>SIP\SIPValidationException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\Utilities.cs">
+      <Link>Utilities.cs</Link>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\SIPSorcery.Sys\SIPSorcery.Sys.csproj" />
+  </ItemGroup>
+</Project>
